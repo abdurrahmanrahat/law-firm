@@ -23,7 +23,7 @@ const ServiceDetailsPage = () => {
       />
       <Container>
         <main className="py-14 md:py-20">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
             <div className="space-y-12">
               <IntroDetails service={service} />
               <ServiceFaqs faqs={service.faqs} />
