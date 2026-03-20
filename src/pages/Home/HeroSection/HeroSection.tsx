@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-18 pb-4">
+    <section className="relative h-[600px] xs:h-[650px] xl:h-screen flex items-center pt-18 pb-4">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -18,7 +18,7 @@ export function HeroSection() {
 
       {/* Content */}
       <Container className="">
-        <div className="relative max-w-3xl">
+        <div className="relative max-w-[600px] xl:max-w-3xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-4">
             <span className="w-2 h-2 bg-primary rounded-full" />
@@ -28,7 +28,7 @@ export function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-2">
+          <h1 className="text-3xl xs:text-4xl md:text-5xl xl:text-6xl font-bold text-white leading-[1.05] mb-2">
             Professional Legal Support{" "}
             <span className="text-primary">You Can Rely On</span>
           </h1>

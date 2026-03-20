@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -80,7 +80,11 @@
 }
 
 @theme inline {
-  --font-sans: 'Geist Variable', sans-serif;
+  --breakpoint-xs: 400px;
+  --shadow-cardLightShadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+  --shadow-cardDarkShadow: rgba(0, 0, 0, 0.6) 0px 7px 29px 0px;
+  --shadow-topUpShadow: 0 5px 20px rgba(0, 0, 0, .2);
+
   --font-playfair-display: "Playfair Display", serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -120,10 +124,6 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-
-  --shadow-cardLightShadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
-  --shadow-cardDarkShadow: rgba(0, 0, 0, 0.6) 0px 7px 29px 0px;
-  --shadow-topUpShadow: 0 5px 20px rgba(0, 0, 0, .2)
 }
 
 @layer base {
