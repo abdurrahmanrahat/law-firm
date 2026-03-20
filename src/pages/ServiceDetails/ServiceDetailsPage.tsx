@@ -1,4 +1,4 @@
-import { getServiceBySlug } from "@/lib/actions/service";
+import { getServiceBySlug } from "@/lib/actions/service.action";
 import { useParams } from "react-router-dom";
 import { DetailsPageBanner } from "./_components/DetailsPageBanner";
 import { IntroDetails } from "./_components/IntroDetails";
