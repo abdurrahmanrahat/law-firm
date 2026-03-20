@@ -22,28 +22,28 @@ export const services: ServiceItem[] = [
         your children, and your financial stability. We provide steady legal guidance with a
         strategy that protects your rights while reducing unnecessary conflict wherever possible.
       </p>
-
+      <p></p>
       <p>
         Whether you are dealing with divorce, child custody, guardianship, alimony, or property
         division, our role is to give you clarity at every stage. We prepare your case carefully,
         explain your options in plain language, and advocate for outcomes that are practical,
         fair, and sustainable.
       </p>
-
+      <p></p>
       <h3>What is included in our Family Law service?</h3>
 
       <p>
         We assist with both negotiated settlements and contested proceedings. Our approach combines
         legal precision, sensitive communication, and a focus on long-term stability for families.
       </p>
-
+      <p></p>
       <ul>
         <li>Divorce and legal separation filings</li>
         <li>Child custody, visitation, and parenting arrangements</li>
         <li>Child support and spousal support matters</li>
         <li>Property and asset division strategy</li>
         <li>Protective orders and urgent family court applications</li>
-      </ul>
+      </ul><p></p>
 
       <p>
         Every family situation is unique. We tailor our legal strategy to your priorities, timeline,
@@ -289,7 +289,7 @@ export const services: ServiceItem[] = [
         long-term opportunities. We support students, parents, educators, and institutions with
         balanced and practical legal guidance.
       </p>
-
+      <p></p>
       <p>
         Our work includes disciplinary matters, academic appeals, administrative policies, and
         governance questions where legal review can help avoid costly mistakes.

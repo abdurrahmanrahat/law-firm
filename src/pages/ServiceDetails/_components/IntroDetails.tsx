@@ -2,35 +2,36 @@ import type { ServiceItem } from "@/types/service.type";
 
 export function IntroDetails({ service }: { service: ServiceItem }) {
   return (
-    <section className="space-y-8">
-      <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+    <section className="space-y-6">
+      <div className="overflow-hidden rounded-md border border-border shadow-cardLightShadow dark:shadow-cardDarkShadow">
         <img
           src={service.image}
           alt={service.title}
-          className="h-[260px] w-full object-cover sm:h-[360px] lg:h-[460px]"
+          className="h-[220px] w-full object-cover sm:h-[360px] lg:h-[480px]"
         />
       </div>
 
       <div>
-        <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-4xl">
+        <h2 className="text-3xl 2xl:text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
           {service.title}
         </h2>
 
-        <p className="mt-4 max-w-3xl text-base leading-8 text-zinc-600 dark:text-zinc-300">
+        <p className="mt-2 max-w-3xl text-base 2xl:text-lg font-josefin-sans text-gray-700 dark:text-gray-300">
           {service.shortDescription}
         </p>
       </div>
 
       <div
-        className="prose prose-zinc max-w-none prose-headings:mt-10 prose-headings:font-semibold prose-headings:text-zinc-900 prose-p:leading-8 prose-li:leading-8 dark:prose-invert"
+        className="font-josefin-sans html-content text-gray-700 dark:text-gray-300 "
         dangerouslySetInnerHTML={{ __html: service.description }}
       />
+      {/*    max-w-none    prose-p:leading-8 prose-li:leading-8 dark:prose-invert */}
 
       <div className="grid gap-5 sm:grid-cols-2">
         {service.contentImages.map((img, index) => (
           <div
             key={index}
-            className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+            className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900"
           >
             <img
               src={img}
@@ -41,7 +42,7 @@ export function IntroDetails({ service }: { service: ServiceItem }) {
         ))}
       </div>
 
-      <div className="text-base leading-8 text-zinc-600 dark:text-zinc-300">
+      <div className="text-base leading-8 text-gray-600 dark:text-gray-300">
         <p>
           We combine careful preparation, responsive communication, and a
           results-focused legal strategy so that clients understand both the

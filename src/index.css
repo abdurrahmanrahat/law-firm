@@ -4,6 +4,7 @@
 
 /* css files */
 @import url("@/styles/service.styles.css");
+@import url("@/styles/webkit-scrollbar.styles.css");
 
 /* tailwind */
 @import "tailwindcss";
@@ -154,23 +155,40 @@
   }
 }
 
-/* scrollbar design */
-/* For WebKit browsers (Chrome, Safari, newer versions of Opera) */
-::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
+@layer components {
+  .html-content h1 {
+    @apply text-2xl font-semibold leading-tight mb-3;
+  }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
+  .html-content h2 {
+    @apply text-xl font-semibold leading-tight mb-3;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #c2c1d0;
-  border-radius: 10px;
-}
+  .html-content h3 {
+    @apply text-lg font-semibold leading-snug mb-2;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #c2c1d0;
+  .html-content h4 {
+    @apply text-[17px] font-medium leading-snug mb-2;
+  }
+
+  .html-content h5 {
+    @apply text-base font-medium leading-snug mb-2;
+  }
+
+  .html-content h6 {
+    @apply text-sm font-medium leading-snug mb-2;
+  }
+
+  .html-content p {
+    @apply text-[15px] 2xl:text-[17px] leading-6 mb-3;
+  }
+
+  .html-content ul {
+    @apply list-inside pl-0 ml-0 text-[15px] 2xl:text-[17px];
+  }
+
+  .html-content ul li {
+    @apply list-[circle] pl-1 mb-2 leading-6;
+  }
 }
