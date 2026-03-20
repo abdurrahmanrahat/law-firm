@@ -37,17 +37,17 @@ const PageBanner = ({
           </h1>
 
           {/* Breadcrumb */}
-          <div className="mt-2 text-sm 2xl:text-base tracking-wide">
+          <div className="mt-2 text-sm xl:text-base 2xl:text-lg tracking-wide">
             <Link
               to="/"
-              className="text-white hover:text-primary uppercase transition-all duration-300"
+              className="text-white hover:text-primary capitalize transition-all duration-300"
             >
-              HOME
+              Home
             </Link>
             <span className="mx-2 text-white/90">/</span>
             <Link
               to={currentHref}
-              className="text-primary font-medium uppercase"
+              className="text-primary font-medium capitalize"
             >
               {currentPage}
             </Link>

@@ -1,6 +1,6 @@
 import Container from "@/components/Layout/Container";
 import SectionTitle from "@/components/Shared/Ui/SectionTitle";
-import { services } from "@/dara/services";
+import { services } from "@/data/services";
 import { ServiceCard } from "./ServiceCard";
 
 const Services = () => {
@@ -13,9 +13,10 @@ const Services = () => {
           {services.map((item) => (
             <ServiceCard
               key={item.id}
+              slug={item.slug}
               title={item.title}
-              description={item.description}
-              image={item.image}
+              shortDescription={item.shortDescription}
+              icon={item.icon}
             />
           ))}
         </div>
