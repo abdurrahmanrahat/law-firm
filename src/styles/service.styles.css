@@ -1,0 +1,18 @@
+.orbit-dot {
+    animation: orbit-rotate 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.group:hover .orbit-dot {
+    animation-play-state: running;
+}
+
+@keyframes orbit-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
