@@ -1,6 +1,6 @@
-import type { ServiceItem } from "@/types/service.type";
+import type { TService } from "@/types/service.type";
 
-export const services: ServiceItem[] = [
+export const services: TService[] = [
   {
     id: 1,
     slug: "family-law",

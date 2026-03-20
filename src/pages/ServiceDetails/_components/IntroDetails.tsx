@@ -1,6 +1,6 @@
-import type { ServiceItem } from "@/types/service.type";
+import type { TService } from "@/types/service.type";
 
-export function IntroDetails({ service }: { service: ServiceItem }) {
+export function IntroDetails({ service }: { service: TService }) {
   return (
     <section className="space-y-6">
       <div className="overflow-hidden rounded-md border border-border shadow-cardLightShadow dark:shadow-cardDarkShadow">
@@ -22,12 +22,11 @@ export function IntroDetails({ service }: { service: ServiceItem }) {
       </div>
 
       <div
-        className="font-josefin-sans html-content text-gray-700 dark:text-gray-300 "
+        className="font-josefin-sans html-content text-gray-700 dark:text-gray-300"
         dangerouslySetInnerHTML={{ __html: service.description }}
       />
-      {/*    max-w-none    prose-p:leading-8 prose-li:leading-8 dark:prose-invert */}
 
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid gap-3 sm:grid-cols-2">
         {service.contentImages.map((img, index) => (
           <div
             key={index}
@@ -36,18 +35,10 @@ export function IntroDetails({ service }: { service: ServiceItem }) {
             <img
               src={img}
               alt={`${service.title} content image ${index + 1}`}
-              className="h-[240px] w-full object-cover sm:h-[260px]"
+              className="h-[220px] w-full object-cover md:h-[260px]"
             />
           </div>
         ))}
-      </div>
-
-      <div className="text-base leading-8 text-gray-600 dark:text-gray-300">
-        <p>
-          We combine careful preparation, responsive communication, and a
-          results-focused legal strategy so that clients understand both the
-          process and the path forward.
-        </p>
       </div>
     </section>
   );

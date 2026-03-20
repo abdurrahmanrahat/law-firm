@@ -1,42 +1,47 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import type { ServiceFaq } from "@/types/service.type";
+import MyAccordionItem from "@/components/Shared/Ui/MyAccordionItem";
+import { Accordion } from "@/components/ui/accordion";
+import type { TFaq } from "@/types/service.type";
+import { useState } from "react";
 
-export function ServiceFaqs({ faqs }: { faqs: ServiceFaq[] }) {
+export function ServiceFaqs({ faqs }: { faqs: TFaq[] }) {
+  const [openItem, setOpenItem] = useState("item-0");
+
   return (
-    <section className="border-t border-zinc-200 pt-10 dark:border-zinc-800">
+    <section className="pt-0">
       <div className="max-w-3xl">
-        <h3 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+        <h3 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
           Questions You May Wonder?
         </h3>
 
-        <p className="mt-4 text-base leading-8 text-zinc-600 dark:text-zinc-300">
+        <p className="mt-4 text-base 2xl:text-lg leading-[1.3] text-gray-600 dark:text-gray-300 font-josefin-sans">
           Here are some of the most common questions clients ask before getting
           started. We keep the answers clear, practical, and focused on what
           matters next.
         </p>
       </div>
 
-      <div className="mt-8">
-        <Accordion type="single" collapsible className="space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index}`}
-              className="overflow-hidden rounded-2xl border border-zinc-200 bg-white px-0 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
-            >
-              <AccordionTrigger className="px-6 py-5 text-left text-base font-medium text-zinc-900 hover:no-underline dark:text-zinc-100">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="border-t border-zinc-200 px-6 pb-6 pt-5 text-base leading-8 text-zinc-600 dark:border-zinc-800 dark:text-zinc-300">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
+      {/* faqs */}
+      <div className="mt-8 rounded-[4px] overflow-hidden border border-border ">
+        <Accordion
+          type="single"
+          collapsible
+          value={openItem}
+          onValueChange={(value) => setOpenItem(value)}
+          className="w-full"
+        >
+          {faqs.map((faq, index) => {
+            const itemValue = `item-${index}`;
+            const isOpen = openItem === itemValue;
+
+            return (
+              <MyAccordionItem
+                key={itemValue}
+                itemValue={itemValue}
+                faq={faq}
+                isOpen={isOpen}
+              />
+            );
+          })}
         </Accordion>
       </div>
     </section>

@@ -1,9 +1,9 @@
-export type ServiceFaq = {
+export type TFaq = {
   question: string;
   answer: string;
 };
 
-export type ServiceItem = {
+export type TService = {
   id: number;
   slug: string;
   title: string;
@@ -13,5 +13,5 @@ export type ServiceItem = {
   image: string;
   contentImages: string[];
   description: string; // html string
-  faqs: ServiceFaq[];
+  faqs: TFaq[];
 };
