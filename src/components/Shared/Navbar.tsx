@@ -321,12 +321,20 @@ export default function Navbar() {
                 </div>
 
                 <div className="mt-5 flex flex-col gap-3 border-t pt-5">
-                  <Button className="rounded-full" size="lg">
-                    Get Started
-                  </Button>
-                  <Button variant="outline" className="rounded-full" size="lg">
-                    Book Demo
-                  </Button>
+                  <Link to="/contact">
+                    <Button className="rounded-full" size="lg">
+                      Get Started
+                    </Button>
+                  </Link>
+                  <Link to="/contact">
+                    <Button
+                      variant="outline"
+                      className="rounded-full"
+                      size="lg"
+                    >
+                      Book Demo
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Container>

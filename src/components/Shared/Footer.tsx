@@ -71,7 +71,13 @@ function Footer() {
                     <Button
                       variant="outline"
                       size="lg"
-                      className="border-white/20 text-white bg-transparent hover:bg-white/10 hover:text-white px-5"
+                      className="
+    px-5
+    border-border text-foreground bg-background
+    hover:bg-accent hover:text-accent-foreground
+    dark:border-white/20 dark:text-white dark:bg-transparent
+    dark:hover:bg-white/10 dark:hover:text-white
+  "
                     >
                       <MessageCircle className="w-5 h-5" />
                       WhatsApp Chat
