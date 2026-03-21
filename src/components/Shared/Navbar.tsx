@@ -243,7 +243,7 @@ export default function Navbar() {
             initial="closed"
             animate="open"
             exit="closed"
-            className="absolute top-full left-0 w-full overflow-hidden border-t border-border/60 bg-background/95 lg:hidden z-40 shadow-cardLightShadow dark:shadow-cardDarkShadow"
+            className="absolute top-full left-0 w-full overflow-hidden border-t border-border/60 bg-background lg:hidden z-40 shadow-cardLightShadow dark:shadow-cardDarkShadow"
           >
             <Container>
               <div className="py-4">
