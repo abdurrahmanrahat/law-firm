@@ -42,14 +42,14 @@ export default function Navbar2() {
           </nav>
 
           <div className="hidden items-center gap-3 lg:flex">
-            <ThemeToggle />
+            <ThemeToggle isScrolled={false} />
             <Button className="rounded-full px-5" size="lg">
               Get Started
             </Button>
           </div>
 
           <div className="flex items-center gap-3 lg:hidden">
-            <ThemeToggle />
+            <ThemeToggle isScrolled={false} />
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
