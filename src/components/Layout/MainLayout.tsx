@@ -1,16 +1,19 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
+import ScrollToTop from "../Shared/Ui/ScrollToTop.jsx";
 
 const MainLayout = () => {
   return (
-    <div>
-      <Navbar />
-      <div className="min-h-screen">
-        <Outlet />
+    <ScrollToTop>
+      <div>
+        <Navbar />
+        <div className="min-h-screen">
+          <Outlet />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </ScrollToTop>
   );
 };
 
