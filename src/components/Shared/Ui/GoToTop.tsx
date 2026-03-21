@@ -1,5 +1,5 @@
+import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
-import { IoArrowUp } from "react-icons/io5";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +36,7 @@ const GoToTop = () => {
           onClick={goToHandler}
         >
           <div className="w-[20px] h-[20px] 2xl:w-[24px] 2xl:h-[24px] bg-dark transition-all duration-500 rounded-full flex justify-center items-center">
-            <IoArrowUp />
+            <ArrowUp />
           </div>
           <span className="text-dark text-sm font-medium 2xl:text-base flex items-center">
             <span className="hidden md:block">Back to</span> Top

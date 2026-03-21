@@ -2,6 +2,7 @@ import { HeroSection } from "./HeroSection/HeroSection";
 import { OurProcess } from "./OurProcess/OurProcess";
 import Services from "./Services/Services";
 import { StatsSection } from "./StatsSection/StatsSection";
+import { WhyChooseUs } from "./WhyChooseUs/WhyChooseUs";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Services />
       <StatsSection />
       <OurProcess />
+      <WhyChooseUs />
       <h2 className="text-primary">Hello</h2>
       <div className="min-h-screen">hi</div>
     </div>
