@@ -57,7 +57,7 @@ function Footer() {
                 </p>
 
                 <div className="flex gap-2 pt-2">
-                  <Link to="">
+                  <Link to="/contact">
                     <Button size="lg" className="px-5">
                       <Calendar className="w-5 h-5" />
                       Appointment
