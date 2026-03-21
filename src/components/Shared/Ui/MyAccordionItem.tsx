@@ -13,7 +13,7 @@ const MyAccordionItem = ({ faq, itemValue, isOpen }: TMyAccordionItemProps) => {
   return (
     <AccordionItem
       value={itemValue}
-      className="border-b border-border last:border-b-0"
+      className="border-b border-border/60 last:border-b-0"
     >
       <AccordionPrimitive.Header className="flex">
         <AccordionPrimitive.Trigger

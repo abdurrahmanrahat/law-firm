@@ -21,7 +21,7 @@ export function ServiceFaqs({ faqs }: { faqs: TFaq[] }) {
       </div>
 
       {/* faqs */}
-      <div className="mt-8 rounded-[4px] overflow-hidden border border-border ">
+      <div className="mt-8 rounded-[4px] overflow-hidden border border-border/60">
         <Accordion
           type="single"
           collapsible

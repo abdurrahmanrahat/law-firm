@@ -1,4 +1,5 @@
 import { ContactSection } from "./ContactSection/ContactSection";
+import FAQs from "./FAQs/FAQs";
 import { HeroSection } from "./HeroSection/HeroSection";
 import { OurProcess } from "./OurProcess/OurProcess";
 import Services from "./Services/Services";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <WhyChooseUs />
       <TestimonialsSection />
       <ContactSection />
+      <FAQs />
     </div>
   );
 };
