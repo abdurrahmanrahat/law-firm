@@ -5,6 +5,7 @@
 /* css files */
 @import url("@/styles/service.styles.css");
 @import url("@/styles/webkit-scrollbar.styles.css");
+@import url("@/styles/my-loader.styles.css");
 
 /* tailwind */
 @import "tailwindcss";

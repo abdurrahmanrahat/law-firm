@@ -1,0 +1,14 @@
+/* Added custom animation for the realistic loading arc */
+@keyframes spin-loader {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-loader 2s linear infinite;
+}
