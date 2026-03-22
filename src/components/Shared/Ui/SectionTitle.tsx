@@ -11,7 +11,7 @@ export default function SectionTitle({
         {subTitle}
       </p>
 
-      <h2 className="text-2xl xl:text-3xl 2xl:text-4xl font-semibold tracking-wide text-gray-950 dark:text-gray-50">
+      <h2 className="text-2xl xl:text-3xl 2xl:text-4xl font-semibold tracking-wide text-gray-950 dark:text-gray-50 leading-[1.2]">
         {title}
       </h2>
 

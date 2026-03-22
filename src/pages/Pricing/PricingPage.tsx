@@ -1,4 +1,5 @@
 import PageBanner from "@/components/Shared/Ui/PageBanner";
+import ComparisonTable from "./ComparisonTable/ComparisonTable";
 import PricingPlans from "./PricingPlans/PricingPlans";
 
 const PricingPage = () => {
@@ -11,6 +12,7 @@ const PricingPage = () => {
         image="/images/home/hero-bg.jpg"
       />
       <PricingPlans />
+      <ComparisonTable />
     </div>
   );
 };
