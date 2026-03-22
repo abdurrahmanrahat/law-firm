@@ -23,6 +23,7 @@
   --border: #ced0d4;
   --background: #F9FAFB;
   --card: #ebecee;
+  --muted-foreground: #4b5563;
 
   --foreground: oklch(0.145 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -31,7 +32,6 @@
   --primary-foreground: oklch(0.985 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
@@ -60,6 +60,7 @@
   --border: #374151;
   --background: #080708;
   --card: #06080c;
+  --muted-foreground: #d1d5db;
 
   --foreground: oklch(0.985 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -68,7 +69,6 @@
   --primary-foreground: oklch(0.205 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
@@ -192,4 +192,6 @@
   .html-content ul li {
     @apply list-[circle] pl-1 mb-2 leading-6;
   }
+
+
 }

@@ -1,4 +1,5 @@
 import PageBanner from "@/components/Shared/Ui/PageBanner";
+import { OurStory } from "./OurStory/OurStory";
 
 const AboutPage = () => {
   return (
@@ -9,6 +10,7 @@ const AboutPage = () => {
         currentHref="/about"
         image="/images/home/hero-bg.jpg"
       />
+      <OurStory />
       AboutPage
     </div>
   );
