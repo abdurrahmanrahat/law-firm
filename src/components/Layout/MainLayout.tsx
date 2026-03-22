@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
 import ScrollToTop from "../Shared/Ui/ScrollToTop";
+import WhatsAppAction from "../Shared/Ui/WhatsAppAction";
 
 const MainLayout = () => {
   return (
@@ -12,6 +13,7 @@ const MainLayout = () => {
           <Outlet />
         </div>
         <Footer />
+        <WhatsAppAction />
       </div>
     </ScrollToTop>
   );

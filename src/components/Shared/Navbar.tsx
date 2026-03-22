@@ -320,16 +320,16 @@ export default function Navbar() {
                   })}
                 </div>
 
-                <div className="mt-5 flex flex-col gap-3 border-t pt-5">
-                  <Link to="/contact">
-                    <Button className="rounded-full" size="lg">
+                <div className="mt-5 flex flex-col gap-3 border-t border-border/60 pt-5">
+                  <Link to="/contact" onClick={closeMobileMenu}>
+                    <Button className="rounded-full px-5" size="lg">
                       Get Started
                     </Button>
                   </Link>
-                  <Link to="/contact">
+                  <Link to="/contact" onClick={closeMobileMenu}>
                     <Button
                       variant="outline"
-                      className="rounded-full"
+                      className="rounded-full px-5"
                       size="lg"
                     >
                       Book Demo
