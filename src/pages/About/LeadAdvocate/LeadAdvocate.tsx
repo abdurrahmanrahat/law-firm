@@ -10,7 +10,7 @@ const LeadAdvocate = () => {
           alt="advocate background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/90" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       <Container>

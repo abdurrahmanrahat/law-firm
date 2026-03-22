@@ -1,6 +1,7 @@
 import PageBanner from "@/components/Shared/Ui/PageBanner";
 import LeadAdvocate from "./LeadAdvocate/LeadAdvocate";
 import { OurStory } from "./OurStory/OurStory";
+import { Team } from "./Team/Team";
 
 const AboutPage = () => {
   return (
@@ -13,7 +14,7 @@ const AboutPage = () => {
       />
       <OurStory />
       <LeadAdvocate />
-      AboutPage
+      <Team />
     </div>
   );
 };
