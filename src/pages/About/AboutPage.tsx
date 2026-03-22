@@ -1,4 +1,5 @@
 import PageBanner from "@/components/Shared/Ui/PageBanner";
+import LeadAdvocate from "./LeadAdvocate/LeadAdvocate";
 import { OurStory } from "./OurStory/OurStory";
 
 const AboutPage = () => {
@@ -11,6 +12,7 @@ const AboutPage = () => {
         image="/images/home/hero-bg.jpg"
       />
       <OurStory />
+      <LeadAdvocate />
       AboutPage
     </div>
   );
