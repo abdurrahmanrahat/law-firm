@@ -16,6 +16,7 @@ const NotFoundPage = lazy(
   () => import("./pages/NotFoundPage/NotFoundPage.tsx"),
 );
 const ContactPage = lazy(() => import("./pages/Contact/ContactPage"));
+const PricingPage = lazy(() => import("./pages/Pricing/PricingPage"));
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -52,6 +53,14 @@ createRoot(document.getElementById("root")!).render(
               element={
                 <WithSuspense>
                   <ServiceDetailsPage />
+                </WithSuspense>
+              }
+            />
+            <Route
+              path="pricing"
+              element={
+                <WithSuspense>
+                  <PricingPage />
                 </WithSuspense>
               }
             />
