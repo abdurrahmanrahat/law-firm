@@ -9,7 +9,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/1.jpg",
     caseDetails: {
       client: "Emily Watson",
-      attorneyId: "attorney-robert-fox",
+      attorneyId: "01",
       caseType: "Family Law",
       caseStart: "2023-01-10",
       executionTimeInMonths: 4,
@@ -60,7 +60,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/2.jpg",
     caseDetails: {
       client: "Michael Brown",
-      attorneyId: "attorney-jane-cooper",
+      attorneyId: "02",
       caseType: "Personal Injury",
       caseStart: "2023-02-01",
       executionTimeInMonths: 5,
@@ -109,7 +109,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/3.jpg",
     caseDetails: {
       client: "TechNova Ltd.",
-      attorneyId: "attorney-robert-fox",
+      attorneyId: "03",
       caseType: "Business Law",
       caseStart: "2022-11-01",
       executionTimeInMonths: 6,
@@ -158,7 +158,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/4.jpg",
     caseDetails: {
       client: "Daniel Carter",
-      attorneyId: "attorney-jacob-jones",
+      attorneyId: "04",
       caseType: "Criminal Law",
       caseStart: "2023-03-12",
       executionTimeInMonths: 3,
@@ -205,7 +205,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/5.jpg",
     caseDetails: {
       client: "Sophia Lee",
-      attorneyId: "attorney-jerome-bell",
+      attorneyId: "01",
       caseType: "Education Law",
       caseStart: "2023-04-01",
       executionTimeInMonths: 2,
@@ -253,7 +253,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/6.jpg",
     caseDetails: {
       client: "John Matthews",
-      attorneyId: "attorney-jerome-bell",
+      attorneyId: "02",
       caseType: "Real Estate Law",
       caseStart: "2022-12-01",
       executionTimeInMonths: 7,
@@ -303,7 +303,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/7.jpg",
     caseDetails: {
       client: "Olivia Harris",
-      attorneyId: "attorney-jane-cooper",
+      attorneyId: "03",
       caseType: "Family Law",
       caseStart: "2023-01-15",
       executionTimeInMonths: 4,
@@ -353,7 +353,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/8.jpg",
     caseDetails: {
       client: "StartUp Hub Inc.",
-      attorneyId: "attorney-robert-fox",
+      attorneyId: "03",
       caseType: "Business Law",
       caseStart: "2023-05-01",
       executionTimeInMonths: 3,
@@ -402,7 +402,7 @@ export const caseStudies: TCaseStudy[] = [
     thumbnail: "/images/cases/9.jpg",
     caseDetails: {
       client: "Various Clients",
-      attorneyId: "attorney-jacob-jones",
+      attorneyId: "04",
       caseType: "Others",
       caseStart: "2023-06-01",
       executionTimeInMonths: 2,

@@ -4,7 +4,7 @@ export type TAttorney = {
   name: string;
   role: string;
   image: string;
-  bio: string; // html string
+  bio: string;
   specialties: string[];
   socialLinks: {
     facebook: string;

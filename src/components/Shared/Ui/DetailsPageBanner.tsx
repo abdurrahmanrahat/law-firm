@@ -4,9 +4,16 @@ import { Link } from "react-router-dom";
 type TDetailsPageBannerProps = {
   title: string;
   image: string;
+  rawPage: string;
+  rawPageHref: string;
 };
 
-export function DetailsPageBanner({ title, image }: TDetailsPageBannerProps) {
+export function DetailsPageBanner({
+  title,
+  image,
+  rawPage,
+  rawPageHref,
+}: TDetailsPageBannerProps) {
   return (
     <section className="relative overflow-hidden">
       <div className="relative h-[320px] md:h-[400px] lg:h-[420px] 2xl:h-[520px]">
@@ -23,7 +30,7 @@ export function DetailsPageBanner({ title, image }: TDetailsPageBannerProps) {
         <Container>
           <div className="relative flex items-center h-[320px] md:h-[400px] lg:h-[420px] 2xl:h-[520px] pt-12">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-semibold tracking-tight text-white">
+              <h1 className="text-3xl md:text-4xl xl:text-[40px] 2xl:text-5xl font-semibold tracking-tight text-white">
                 {title}
               </h1>
 
@@ -36,10 +43,10 @@ export function DetailsPageBanner({ title, image }: TDetailsPageBannerProps) {
                 </Link>
                 <span>•</span>
                 <Link
-                  to="/services"
+                  to={rawPageHref}
                   className="hover:text-primary transition-all duration-300"
                 >
-                  Service
+                  {rawPage}
                 </Link>
                 <span>•</span>
                 <span className="text-primary font-medium">{title}</span>

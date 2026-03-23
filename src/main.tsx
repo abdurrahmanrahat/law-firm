@@ -19,6 +19,9 @@ const ContactPage = lazy(() => import("./pages/Contact/ContactPage"));
 const CaseStudiesPage = lazy(
   () => import("./pages/CaseStudies/CaseStudiesPage"),
 );
+const CaseStudyDetailsPage = lazy(
+  () => import("./pages/CaseStudyDetails/CaseStudyDetailsPage"),
+);
 const PricingPage = lazy(() => import("./pages/Pricing/PricingPage"));
 
 createRoot(document.getElementById("root")!).render(
@@ -72,6 +75,14 @@ createRoot(document.getElementById("root")!).render(
               element={
                 <WithSuspense>
                   <CaseStudiesPage />
+                </WithSuspense>
+              }
+            />
+            <Route
+              path="case-studies/:slug"
+              element={
+                <WithSuspense>
+                  <CaseStudyDetailsPage />
                 </WithSuspense>
               }
             />
