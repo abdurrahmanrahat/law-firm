@@ -212,9 +212,11 @@ export default function Navbar() {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
             <ThemeToggle isScrolled={isScrolled} />
-            <Button className="rounded-full px-5" size="lg">
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button className="rounded-full px-5" size="lg">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Actions */}
@@ -266,7 +268,10 @@ export default function Navbar() {
                     return (
                       <div key={index} className="">
                         <Link to={item.href}>
-                          <button className="flex w-full items-center justify-between px-3 py-0 text-left text-base font-medium text-foreground">
+                          <button
+                            className="flex w-full items-center justify-between px-3 py-0 text-left text-base font-medium text-foreground"
+                            onClick={closeMobileMenu}
+                          >
                             <span>{item.name}</span>
 
                             <span

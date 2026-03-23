@@ -41,7 +41,7 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            <Link to="">
+            <Link to="/contact">
               <Button size="lg" className="px-5">
                 <Calendar className="w-5 h-5" />
                 Book Appointment

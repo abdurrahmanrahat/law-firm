@@ -58,7 +58,7 @@ const LeadAdvocate = () => {
               </div>
 
               {/* Info Cards */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-2 md:gap-4">
                 <div className="bg-white/5 border border-white/10 p-4 rounded-md backdrop-blur-sm hover:bg-white/10 transition">
                   <p className="text-primary text-xs 2xl:text-sm uppercase tracking-wider mb-1">
                     Enrolled

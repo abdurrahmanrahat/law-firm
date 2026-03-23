@@ -16,7 +16,7 @@ export function StatsSection() {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="text-center shadow-cardLightShadow dark:shadow-cardDarkShadow py-8 md:py-12"
+              className="text-center shadow-cardLightShadow dark:shadow-cardDarkShadow bg-card py-8 md:py-12 rounded-md"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-1 md:mb-4">
                 <stat.icon className="w-6 h-6 text-primary" />

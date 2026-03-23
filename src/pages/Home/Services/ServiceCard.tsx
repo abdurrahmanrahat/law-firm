@@ -15,7 +15,7 @@ export function ServiceCard({
 }: TServiceCardProps) {
   return (
     <Link to={`/services/${slug}`}>
-      <article className="group relative overflow-hidden bg-card px-8 py-10 text-center shadow-cardLightShadow dark:shadow-cardDarkShadow transition-all duration-500 hover:-translate-y-1 rounded-sm">
+      <article className="group relative overflow-hidden bg-card px-6 py-10 text-center shadow-cardLightShadow dark:shadow-cardDarkShadow transition-all duration-500 hover:-translate-y-1 rounded-sm">
         <div className="mx-auto mb-4 flex flex-col items-center">
           <div className="relative flex h-[110px] w-[110px] items-center justify-center">
             {/* circle border */}

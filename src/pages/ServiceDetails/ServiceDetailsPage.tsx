@@ -4,6 +4,7 @@ import { getServiceBySlug } from "@/lib/actions/service.action";
 import { useParams } from "react-router-dom";
 import { DetailsPageBanner } from "../../components/Shared/Ui/DetailsPageBanner";
 import { IntroDetails } from "./_components/IntroDetails";
+import RelatedServices from "./_components/RelatedServices";
 import { ServiceFaqs } from "./_components/ServiceFaqs";
 import { ServiceSidebar } from "./_components/ServiceSidebar";
 
@@ -23,7 +24,7 @@ const ServiceDetailsPage = () => {
 
       <Container>
         {service ? (
-          <main className="py-14 md:py-20">
+          <main className="pt-14 md:pt-20">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
               <div className="space-y-12">
                 <IntroDetails service={service} />
@@ -34,6 +35,7 @@ const ServiceDetailsPage = () => {
                 <ServiceSidebar currentSlug={service.slug} />
               </div>
             </div>
+            <RelatedServices />
           </main>
         ) : (
           <DataNotFound

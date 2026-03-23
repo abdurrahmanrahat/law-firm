@@ -129,7 +129,7 @@ const HeroDetails = ({ caseStudy }: { caseStudy: TCaseStudy }) => {
         </Card>
         {/* Thumbnail */}
         <div className="overflow-hidden rounded-md border border-border/60 bg-card shadow-cardLightShadow dark:shadow-cardDarkShadow">
-          <div className="relative h-full overflow-hidden">
+          <div className="relative h-[460px] md:h-full overflow-hidden">
             <img
               src={caseStudy.thumbnail}
               alt={caseStudy.title}
