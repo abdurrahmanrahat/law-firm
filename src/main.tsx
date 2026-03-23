@@ -16,6 +16,9 @@ const NotFoundPage = lazy(
   () => import("./pages/NotFoundPage/NotFoundPage.tsx"),
 );
 const ContactPage = lazy(() => import("./pages/Contact/ContactPage"));
+const CaseStudiesPage = lazy(
+  () => import("./pages/CaseStudies/CaseStudiesPage"),
+);
 const PricingPage = lazy(() => import("./pages/Pricing/PricingPage"));
 
 createRoot(document.getElementById("root")!).render(
@@ -61,6 +64,14 @@ createRoot(document.getElementById("root")!).render(
               element={
                 <WithSuspense>
                   <PricingPage />
+                </WithSuspense>
+              }
+            />
+            <Route
+              path="case-studies"
+              element={
+                <WithSuspense>
+                  <CaseStudiesPage />
                 </WithSuspense>
               }
             />
