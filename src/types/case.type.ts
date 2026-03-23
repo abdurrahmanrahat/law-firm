@@ -4,7 +4,6 @@ export type TCaseStudy = {
   title: string;
   category: string;
   thumbnail: string;
-  featuredImage: string;
 
   // detail facts
   caseDetails: {
