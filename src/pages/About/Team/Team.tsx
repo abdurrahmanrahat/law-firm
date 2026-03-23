@@ -15,7 +15,7 @@ const team = [
   },
   {
     name: "Jane Cooper",
-    role: "Divorce Lawer",
+    role: "Divorce Lawyer",
     image: "/images/about/team/2.jpg",
     socials: [
       { icon: Facebook, href: "#" },
@@ -25,7 +25,7 @@ const team = [
   },
   {
     name: "Jacob Jones",
-    role: "Criminal Lawer",
+    role: "Criminal Lawyer",
     image: "/images/about/team/3.jpg",
     socials: [
       { icon: Facebook, href: "#" },
@@ -35,7 +35,7 @@ const team = [
   },
   {
     name: "Jerome Bell",
-    role: "Family Lawer",
+    role: "Family Lawyer",
     image: "/images/about/team/4.jpg",
     socials: [
       { icon: Facebook, href: "#" },
