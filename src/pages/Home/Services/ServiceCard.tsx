@@ -45,7 +45,7 @@ export function ServiceCard({
           </h3>
         </div>
 
-        <p className="mx-auto max-w-[280px] xl:text-[17px] text-gray-600 dark:text-gray-400 font-josefin-sans">
+        <p className="mx-auto max-w-[310px] xl:text-[17px] text-gray-600 dark:text-gray-400 font-josefin-sans">
           {shortDescription}
         </p>
       </article>

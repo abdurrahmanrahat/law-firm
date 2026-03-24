@@ -6,7 +6,7 @@ export const services: TService[] = [
     slug: "family-law",
     title: "Family Law",
     shortDescription:
-      "Compassionate legal support for divorce, custody, child support, mediation, and family protection matters.",
+      "Compassionate legal support for divorce, custody, child support, & family protection matters.",
     icon: "/images/services/icons/family-law.png",
     pageBannerImage:
       "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80",
@@ -78,7 +78,7 @@ export const services: TService[] = [
     slug: "personal-injury",
     title: "Personal Injury",
     shortDescription:
-      "Strong representation for accident victims seeking compensation for medical costs, income loss, and recovery support.",
+      "Strong representation for accident victims seeking compensation for medical costs and recovery support.",
     icon: "/images/services/icons/personal-injury.png",
     pageBannerImage:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80",
@@ -208,7 +208,7 @@ export const services: TService[] = [
     slug: "criminal-law",
     title: "Criminal Law",
     shortDescription:
-      "Focused legal defense, procedural protection, and strategic representation for criminal allegations and investigations.",
+      "Focused legal defense, procedural protection, & strategic representation for criminal allegations & investigations.",
     icon: "/images/services/icons/criminal-law.png",
     pageBannerImage:
       "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1600&q=80",
